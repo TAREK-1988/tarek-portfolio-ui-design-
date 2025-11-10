@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>TAREK — Front-End Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="brand">
+        <div class="brand-badge">T</div>
+        <div>TAREK • Front-End</div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <!-- يحاول أولاً عرض صورتك الشخصية، ولو مش موجودة يعرض profile.svg -->
+      <img class="photo" src="assets/tarek.jpg" alt="Portrait of TAREK"
+           onerror="this.onerror=null; this.src='assets/profile.svg';"/>
+      <div>
+        <h1>Hi, I'm TAREK — Front-End Web Developer</h1>
+        <p>Training project: <strong>UI Design</strong> • Front-End Web Development course.</p>
+        <p class="small">I design clean UIs, fast experiences, and accessible components. Comfortable with HTML, CSS, JS, and modern UI tooling.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <div class="body">
+          <p><strong>TAREK</strong> — Front-End learner with a back-end background. Interested in UI design systems, component libraries, and performance. This portfolio demonstrates the required sections (About, Projects, Blog, Contact) with a hi-fi layout you can submit.</p>
+          <hr class="sep"/>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Accessibility</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="thumb"><img src="assets/proj1.svg" alt="Project 1 thumbnail" width="100%" height="100%"/></div>
+          <div class="body">
+            <h3>Todo List App UI</h3>
+            <div class="meta">UI layout, empty state, interactions</div>
+            <div class="tags">
+              <span class="tag">UI</span><span class="tag">Wireframe</span><span class="tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb"><img src="assets/proj2.svg" alt="Project 2 thumbnail" width="100%" height="100%"/></div>
+          <div class="body">
+            <h3>Portfolio Website</h3>
+            <div class="meta">Responsive grid, typography system</div>
+            <div class="tags">
+              <span class="tag">Layout</span><span class="tag">Components</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb"><img src="assets/proj3.svg" alt="Project 3 thumbnail" width="100%" height="100%"/></div>
+          <div class="body">
+            <h3>Blog Template</h3>
+            <div class="meta">Card list, reading flow</div>
+            <div class="tags">
+              <span class="tag">Blog</span><span class="tag">Content</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="section" id="blog">
+      <h2>Blog</h2>
+      <div class="blog-grid">
+        <article class="post">
+          <div class="thumb"><img src="assets/blog1.svg" alt="Blog 1 cover" width="100%" height="100%"/></div>
+          <div class="body">
+            <h3>Designing a Clean Todo UI</h3>
+            <p class="small">Notes on list density, empty states, and feedback cues. Keep actions visible and reduce friction.</p>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><img src="assets/blog2.svg" alt="Blog 2 cover" width="100%" height="100%"/></div>
+          <div class="body">
+            <h3>From Wireframe to Prototype</h3>
+            <p class="small">A quick path to hi-fi: define hierarchy, set type scale, then apply the brand palette.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <div class="body">
+          <form class="form" onsubmit="return false">
+            <input class="input" type="text" placeholder="Name"/>
+            <input class="input" type="email" placeholder="Email"/>
+            <textarea class="input full" rows="6" placeholder="Message"></textarea>
+            <div style="display:flex;justify-content:flex-end;gap:8px" class="full">
+              <a class="btn" href="#">Reset</a>
+              <a class="btn primary" href="#">Send</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer small">© 2025 TAREK — UI Design • Front-End Web Development course</div>
+  </div>
+</body>
+</html>
